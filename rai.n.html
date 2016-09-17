@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('bg.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.transbox{
+	margin = 200px;
+	background-color: #ffffff;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+div.transbox p{
+	margin: 5%;
+	color: #000000;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Navigation</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Links</a></li>
+  </ul>
+</nav>
+
+<div class="parallax">
+	<div class = "transbox">
+	Scroll Up and Down this page to see the parallax scrolling effect.
+		This div is just here to enable scrolling.
+	Tip: Try to remove the background-attachment property to remove the scrolling effect.
+	</div>
+</div>
+
+
+<div class="parallax"></div>
+
+</body>
+</html>
+
+
+
