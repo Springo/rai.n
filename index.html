@@ -1,8 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>How to make a horizontal website</title>
-//<script type="text/javascript" src="jquery.js"></script>
-//<script type="text/javascript" src="horizontal-scroll.js"></script>
+<title>rai.n</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="horizontal-scroll.js"></script>
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script type = "text/javascript" src="makechart.js"></script>
+
+
 <style type="text/css">
 * {
 margin:0;
@@ -52,15 +58,17 @@ text-align:center;
 <li><a href="#two">TWO</a></li>
 <li><a href="#three">THREE</a></li>
 <li><a href="#four">FOUR</a></li>
-<li><a href="#five">FIVE</a></li>
 </ul>
 
 <div id="wrap">
 <div id="one"><p>ONE</p></div>
-<div id="two"><p>TWO</p></div>
+<div id="two"><p>
+<body>
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</body>
+</div>
 <div id="three"><p>THREE</p></div>
 <div id="four"><p>FOUR</p></div>
-<div id="five"><p>FIVE</p></div>
 </div>
 
 </body>

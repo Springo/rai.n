@@ -1,0 +1,3 @@
+Highcharts JS v.4.2.6 (c) 2009-2016 Torstein Honsi
+jQuery JavaScript Library v.1.3.2 (c) 2009 John Resig
+jQuery.ScrollTo v.1.4.1 (c) Ariel Flesler
