@@ -11,12 +11,11 @@ num_labels = 10;
 %% Load Data
 
 fprintf('Loading data ...\n');
-%X = load('nn_train_features_x.txt');
-%y = load('nn_train_labels_y.txt');
-%Xpred = load('nn_input_features_x.txt');
-%[m numfeat] = size(X);
-%[mpred numpredfeat] = size(Xpred);
-load('ex4data1.mat');
+X = load('nn_train_features_x.txt');
+y = load('nn_train_labels_y.txt');
+Xpred = load('nn_input_features_x.txt');
+[m numfeat] = size(X);
+[mpred numpredfeat] = size(Xpred);
 
 %% Initialize Parameters
 
