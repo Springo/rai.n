@@ -4,9 +4,9 @@ clc
 
 %% Set up Network Size
 
-input_layer_size  = 400;  
+input_layer_size  = 11;  
 hidden_layer_size = 25;   
-num_labels = 10;          
+num_labels = 4;          
 
 %% Load Data
 
@@ -57,6 +57,6 @@ Theta4 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))) + 
 %% Predictions
 
 f = fopen('nn_output_labels_y.txt', 'w');
-pred = predict(Theta1, Theta2, Theta3, Theta4, X);
+pred = predict(Theta1, Theta2, Theta3, Theta4, Xpred);
 fprintf(f,'%d\n',pred);
 fclose(f);

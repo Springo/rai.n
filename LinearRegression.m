@@ -13,6 +13,8 @@ Xpred = load('input_features_x.txt');
 
 %% Preprocess Data
 
+[X mu sigma] = featureNormalize(X); % normalize features
+[Xpred mupred sigmapred] = featureNormalize(Xpred); % normalize features
 X = [ones(m,1) X]; % add intercept to training set
 Xpred = [ones(mpred,1) Xpred]; % add intercept to prediction set
 numfeat = numfeat + 1;
@@ -21,7 +23,7 @@ numfeat = numfeat + 1;
 
 fprintf('Running gradient descent ...\n');
 
-alpha = 1;
+alpha = 0.05;
 num_iters = 400;
 
 theta = zeros(numfeat, 1);

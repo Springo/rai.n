@@ -32,7 +32,7 @@ h2 = sigmoid([ones(m, 1) h1] * Theta2');
 h3 = sigmoid([ones(m, 1) h2] * Theta3');
 h4 = sigmoid([ones(m, 1) h3] * Theta4');
 for i = 1:m
-    newy(i, y(i)) = 1;
+    newy(i, y(i) + 1) = 1;
 end
 
 % calculate cost
