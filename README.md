@@ -1,3 +1,3 @@
 # rai.n
 BigRed//Hacks Project
-test - Nikhil Dave
+By Kevin Xia, Janice Huang, Nikhil Dave, and Valene Tjong
